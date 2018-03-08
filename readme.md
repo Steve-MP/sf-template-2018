@@ -22,6 +22,8 @@ A post-install script will do an initial compile of the scss files and put the r
 
 When developing, you should run the "gulp" command from the command line. This will open a browser session (using Browsersync), watch the scss files in src/scss for changes and recompile/refresh the browser when you change anything. Changes to index.html will also refresh the browser.
 
+Note: Autoprefixer is used to add browser prefixing to the styles in the scss files. Without compiling the scss files into css using Gulp, the styles may not be cross-browser safe.
+
 22/01/2018 - update: the project also now uses webpack to compile the javascript imported through src/js/main.js - as with the SCSS files, an initial compile will be done on installation and, by running the default "gulp" task, webpack will watch the JS files in /src/js for changes and recompile when a change happens.
 
 ## Modifying the contents
