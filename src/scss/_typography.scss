@@ -1,0 +1,162 @@
+/* 
+all these rules belong inside of the smartfigure object. 
+To isolate them from any conflicting rules in the surrounding page
+we wrap everything in the smartfigure class
+*/
+.smartFigure{
+
+    font-size:17px;
+    font-family: 'Open Sans', sans-serif;
+    // -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $dark_background;
+
+    header h1 {
+        font-size: 1em; 
+        margin: 0;
+    }
+
+    header .authors, 
+    header .link 
+    {
+        color:#777; 
+        font-size:0.85em; 
+        font-style: italic; 
+        margin: 0 2px;
+    }
+
+    .moreInfoBox strong {
+        display: block;
+        font-size: 0.724em;
+        line-height: 1.4;
+        padding: 3px 3px 7px;
+        text-align:left;
+    }
+
+    .figurePanel header a {
+        font-size:0.824em;
+        line-height:1em;
+        color:#fff;
+        text-decoration:none;
+    
+    }
+    
+    .figurePanel header a:hover,
+    .figurePanel header a:focus,
+    .figurePanel header a:active
+    {    
+        text-decoration:underline;
+     }
+
+     .figurePanel header h2 {
+        margin:0;
+        font-size:1em;
+        font-weight:normal;
+        line-height:1em;
+    }
+
+    .figureTitle h3 {
+        margin:0;
+    
+    }
+
+
+    .tags h3 {
+        font-size:0.824em;
+        margin:0;
+        padding-top:0.2em;
+    }
+    .interventionNav .tags h3 {color: $perturb_color;}
+    .assayNav .tags h3 {color: $assay_color;}
+
+
+    figcaption {
+        color:$dark_background;
+        font-size:0.824em;
+        line-height: 1.6;
+        text-align:left;
+        margin-bottom:1em;
+    }
+
+    figcaption{
+        a { text-decoration:underline; }
+
+        .component { color:orange; }
+        .assayed { color: $assay_color; }
+        .intervention { color: $perturb_color; }
+
+    }
+
+    .panel.inPanelSearchResults header {
+        background-color: $dark_background;
+        color:#fff;
+        font-size:1em;
+        font-weight:normal;
+        padding:1em;
+    }
+    
+    .panel.inPanelSearchResults header a, 
+    .panel.inPanelSearchResults header a:visited, 
+    .panel.inPanelSearchResults header a:hover {
+        font-weight:normal;
+        font-size:0.824em;
+        color:#fff;
+    
+    }
+
+
+    .inPanelSearchResults .resultSet h3 {
+        margin:0;
+        padding: 0 0 17px 0;
+        font-size:0.882em;
+    }
+
+    .publication .details h3 {
+        padding-bottom: 0.2em;
+    }
+
+    .publication .details .authors {
+        display:block;
+        font-size:0.824em;
+        color:#777;
+    }
+    
+    .publication .details a,
+    .publication .details a:visited
+    {
+        color: $assay_color;
+        font-size:0.824em;
+        position:relative;
+        top:-4px;
+        text-decoration:none;
+    }
+
+    .openClose h3 {
+        display: inline-block;
+        font-size:1em;
+        vertical-align:middle;
+        padding:0;
+        margin:0;
+    }
+
+    .relatedData .searchCaption {
+        font-size:0.882em;
+        line-height:36px;
+        vertical-align:middle;
+    }
+
+    .relatedDataTitle {
+        font-size: 0.824em;
+        line-height:1.4;
+
+    }
+
+    .relatedDataReference {
+        font-size: 0.824em;
+        line-height:1.4;
+        color: #777;
+        font-style:italic;
+    }
+
+
+}/* end of smartfigure */

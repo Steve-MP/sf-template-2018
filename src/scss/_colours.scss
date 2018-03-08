@@ -1,0 +1,14 @@
+/* SASS Variables containing the colours for this project */
+
+$dark_background: #505050;
+$light_background: #f0f0f0;
+
+$dark_highlight: darken($light_background, 20%);
+
+$perturb_color: #cb5b3c;
+$perturb_color__active: darken($perturb_color, 25%);
+
+$assay_color: #6292d0;
+$assay_color__active: darken($assay_color, 25%);
+
+$assay_method_color: #dcdcdc;

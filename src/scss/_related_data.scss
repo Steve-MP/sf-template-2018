@@ -1,0 +1,200 @@
+/* 
+all these rules belong inside of the smartfigure object. 
+To isolate them from any conflicting rules in the surrounding page
+we wrap everything in the smartfigure class
+*/
+.smartFigure{
+
+    .relatedData {
+        background-color: $light_background;
+        box-sizing:border-box;
+        border-radius: 6px;
+        padding: 0;
+        margin:0;
+
+        header { padding:0; }
+
+        .search {
+            text-align:right;
+        }
+
+        .stars {
+            color: orange;
+            text-align:right;
+            padding-bottom: 1em;
+            font-size: 0.824em;
+        }
+
+        footer {
+            font-size: 0.882em;
+            padding:0.4em;
+            font-weight:bold;
+        }
+
+    }
+
+    .headerContainer {
+        display:flex;
+        padding:1em 1.6em;
+
+        & > div { width:50%; }
+    }
+
+    .openClose {
+        padding-top:4px;
+    }
+
+
+    .relatedDataCarouselOuterContainer {
+        display:flex;
+        width:100%;
+        position:relative;
+        height:auto;
+        opacity:1;
+        transition:opacity 0.6s ease-out;
+
+        a { 
+           flex-grow:1;
+           display:flex;
+            justify-content: center;
+            text-decoration:none;
+            font-weight:bold;
+            color: $dark_background;
+           
+            i { 
+               align-self: center;
+
+               text-align:center;
+            }
+        }
+         
+        a:hover,
+        a:active {
+            background-color: $dark_highlight;
+        }
+
+        a:focus {
+            color:orange;
+        }
+    }
+
+    .relatedDataCarouselInnerContainer {
+
+        flex-basis:660px;
+        max-width:660px;
+        overflow:hidden;
+
+
+        ul {
+            margin:0;
+            padding:0;
+            list-style: none;
+            display:flex;
+            transition: transform 0.2s ease-out;
+        }
+
+
+
+    }
+
+    .relatedDataCarouselItem {
+        width:210px;
+        min-width:210px;
+        box-sizing:border-box;
+        padding: 0.824em;
+        margin:0 5px;
+        background-color:#fff;
+        border-bottom: solid 4px #fff;
+        cursor:pointer;
+
+        &.active{ border-bottom:solid 4px orange;}
+
+        .figure {
+            text-align:center;
+            margin-bottom:0.882em;
+        }
+        .figure img {
+            max-width:90%;
+            height:auto;
+        }
+
+        .tags {
+            display:flex;
+            font-size:0.6471em;
+            color:#fff;
+            margin-bottom:0.882em;
+        }
+
+        .tags_perturbed {
+            width:50%;
+            box-sizing:border-box;
+
+            .carouselItemtag {
+                float:left;
+                background-color: $perturb_color;
+            }
+        }
+        .tags_assayed {
+            width:50%;
+            box-sizing:border-box;
+
+            .carouselItemtag {
+                float:right;
+                background-color: $assay_color;
+            }
+        }
+
+        .carouselItemtag {
+            display:inline-block;
+            width:80%;
+            padding:2px 4px;
+            margin-bottom:4px;
+            border-radius:6px;
+            text-align:center;
+            background-color: $light_background;
+            overflow:hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            
+        }
+
+
+    }
+
+    .relatedDataSlideList {
+        display:block;
+        padding:4px 40px;
+        list-style-type: none;
+        margin:0;
+        text-align:center;
+
+        li {
+            display:inline-block;
+            padding:0 0.2em;
+            margin: 8px 2px;
+            color: $dark_background;
+            font-size:1.4em;
+            background-color: #fff;
+            cursor:pointer;
+        }
+
+        li.active {
+            border-bottom: solid 2px orange;
+            color: orange;
+        }
+    }
+
+    .furtherInfoPanelList {
+        height:auto;
+        opacity:1;
+        transition:opacity 0.5s ease-out;
+    }
+    .hide {
+        height:0;
+        opacity:0;
+        overflow:hidden;
+    }
+    
+
+
+}

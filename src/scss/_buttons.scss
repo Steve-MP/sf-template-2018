@@ -1,0 +1,354 @@
+/* 
+all these rules belong inside of the smartfigure object. 
+To isolate them from any conflicting rules in the surrounding page
+we wrap everything in the smartfigure class
+*/
+.smartFigure{
+
+    button, button:active, button:focus, button:hover {border-style: none; cursor:pointer; font-size:0.7647em; font-weight:normal;}
+    button:focus, button:active {outline: -webkit-focus-ring-color auto 5px;}
+
+    .btn-info-group {
+        display: block;
+        box-sizing:border-box;
+        margin:8px;
+        border:none;
+        border-radius:0px;
+    }
+
+    .btn-group {
+        display: inline-block;
+        box-sizing: border-box;
+        margin: 0 4px;
+        // border: solid 1px $dark_highlight;
+        border:none;
+        // border-radius: 6px;
+        line-height:35px;
+        vertical-align:middle; 
+        overflow:visible;
+    }
+
+    .btn-group button {
+        display: block;
+        height: 35px;
+        float: left;
+        margin: 0;
+        cursor: pointer;
+        text-align: center;
+        transition: all 0.1s ease-out;
+        border:solid 1px #c6c6c6;
+        background: #c6c6c6; /* Old browsers */
+        background: -moz-linear-gradient(top, #c6c6c6 0%, #ffffff 27%, #ffffff 87%, #c6c6c6 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #c6c6c6 0%,#ffffff 27%,#ffffff 87%,#c6c6c6 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #c6c6c6 0%,#ffffff 27%,#ffffff 87%,#c6c6c6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6c6c6', endColorstr='#c6c6c6',GradientType=0 ); /* IE6-9 */
+
+    }
+
+    .btn-group button:active {
+        background-color:$light_background;
+        -webkit-box-shadow: inset 0 -2px 3px #b0b4ba;
+                box-shadow: inset 0 -2px 3px #b0b4ba;
+
+    }       
+
+    .btn-group button:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    }
+
+    .btn-group button:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;                
+    }
+
+
+    .btn-group button.active{
+        background: $dark_highlight;
+        font-weight:bold;
+    }
+
+
+    
+    .btn-info-group > button {
+        width:100%;
+        height:35px;
+        margin:0;
+        border-radius:6px;
+        cursor:pointer;
+        text-align:center;
+        transition: all 0.1s ease-out;
+
+    }
+
+    .btn-info-group > button:active {
+        background-color:$light_background;
+    }
+
+
+
+    .entityInfoButtonContainer button {
+        width:100%;
+        color:$dark_background;
+        padding: 6px 8px;
+        border: solid 1px $dark_highlight;
+        border-radius: 6px;
+        background-color:#fff;
+        margin-bottom:4px;
+        margin-top:2px;
+        transition: all 0.1s ease-out;
+        cursor: pointer;
+    
+    }
+    
+    .entityInfoButtonContainer button:active {
+        background-color:#f0f0f0;
+    }
+    
+    .entityInfoButtonContainer button .fa {
+    
+        font-size:17px;
+        vertical-align: middle;
+        position:relative;
+        top:-1px;
+        margin-right:2px;
+    
+    }
+
+    .exploreUpAndDownstreamContainer {
+        display: flex;
+        flex-wrap:nowrap;
+        justify-content:space-between;
+
+        button {
+            margin:0;
+            padding:0;
+            border: none;
+            cursor:pointer;
+            position:relative;
+            z-index:2;
+        }
+
+        i {
+            font-size:26px;
+            line-height:26px;
+            padding: 0 3px;
+            vertical-align: middle;
+            color: $dark-highlight;
+            z-index:4;
+         }
+
+        .upstream:hover:before {
+            content:" ";
+            display:block;
+            position:absolute;
+            left: -2px;
+            top: -4px;
+            width:74px;
+            height:30px;
+            border: solid 2px $dark_highlight;
+            border-radius:4px;
+            background-color:$light-background;
+            z-index:-1;
+        }
+
+        .downstream:hover:before {
+            content:" ";
+            display:block;
+            position:absolute;
+            left: -44px;
+            top: -4px;
+            width:74px;
+            height:30px;
+            border: solid 2px $dark_highlight;
+            border-radius:4px;
+            background-color:$light-background;
+            z-index:-1;
+        }
+
+        .fa {
+            padding:0;
+            font-size: 1em;
+            line-height:26px;
+            color: $dark_background;
+
+        }
+    
+
+    }
+
+    .interventionNav .inverseColor {
+        color: $assay_color;
+    }
+
+    .assayNav .inverseColor {
+        color: $perturb_color;
+    }
+
+   button.element {
+        line-height:24px;
+        height:32px;
+        color:#fff;
+        text-align:left;
+        vertical-align: middle;
+        overflow:hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 120px;
+        border-radius:6px;
+        padding: 0px 4px;
+        margin: 0 0.25em;
+        transition:all 0.1s ease-out;
+        cursor:pointer;
+
+    }
+    
+    .element > img {
+        height:17px;
+        width:auto;
+        vertical-align: middle;
+        margin:0 2px 0 2px;
+    }
+    
+    .element .fa {
+        width:1em;
+        height: 1em;
+        margin:0 2px 0 2px;
+    }
+
+    button.headerButton {
+        text-align:center;
+    }
+
+    .element > i[class^="sd-icon"] {
+        font-size: 24px;
+        line-height: 24px;
+        vertical-align: middle;
+        position: relative;
+        padding:0 2px;
+        top: 0px;       
+    }
+    
+    .interventionNav .btn-info-group > button.element {
+        background-color: $perturb_color;
+        color:#fff;
+        border-color: $perturb_color;
+        /* box-shadow: 0 1px 1px 0 #8A3E29 */
+    }
+    
+    .assayNav .btn-info-group > button.element {
+        background-color: $assay_color;
+        color:#fff;
+        border-color: $assay_color;
+    }
+
+    .figureTitle button {
+        color:$dark_background;
+        background-color: #fff;
+        border: solid 1px $dark_highlight;
+        border-radius:6px;
+        font-size:1em;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+      }
+    
+      .figureTitle button:active {
+          background-color:$light_background;
+      }
+
+      .panelNavigation button {
+        margin-bottom:1.8em;
+        font-size:0.824em;
+        color:$dark_background;
+        padding: 8px 12px;
+        background-color:#fff;
+        border: solid 1px $dark_highlight;
+        border-radius:6px;
+    }
+
+    .panel.inPanelSearchResults header button i {
+        font-size:24px;
+        line-height: 24px;
+        vertical-align: middle;
+        position:relative;
+        top:0px;
+    }
+
+    section.panel.inPanelSearchResults footer button {
+        color:$dark_background;
+        background-color:#fff;
+        font-size:0.824em;
+        border:solid 1px $light_background;
+        border-radius:6px;
+        padding: 4px 6px;
+    }
+    
+    section.panel.inPanelSearchResults footer button:active {
+        background-color:#f0f0f0;
+        border:solid 1px $light_background;
+    }
+
+    .firstItems button, .subsequentItems button {
+        margin-bottom:0.412em;
+    }
+
+
+    button.element.assayed {
+        background-color:$assay_color;
+        border-color:$assay_color;
+    }
+
+    button.element.assayed:hover,
+    button.element.assayed:active,
+    button.element.assayed:focus {
+        background-color:$assay_color__active;
+        border-color:$assay_color__active;
+    }
+
+    button.element.perturbation {
+        background-color:$perturb_color;
+        border: solid 1px $perturb_color;
+    }
+
+    button.element.perturbation:hover,
+    button.element.perturbation:active,
+    button.element.perturbation:focus {
+        background-color:$perturb_color__active;
+        border-color:$perturb_color__active;
+    }
+
+    button.reveal {
+        color:$dark_background;
+        background-color:#fff;
+        font-size:0.824em;
+        border:solid 1px $light_background;
+        border-radius:6px;
+        padding: 4px 6px;
+    }
+    
+    button.reveal:active {
+        background-color:#f0f0f0;
+        border:solid 1px $light_background;
+    }
+
+
+    .openClose button,
+    .openClose button:hover,
+    .openClose button:focus,
+    .openClose button:active
+     {
+        border: solid 1px $dark_highlight;
+        border-radius: 6px;
+        width:2em;
+        height: 2em;
+        line-height: 1em;
+        vertical-align: middle;
+        padding:0;
+        margin-right: 0.824em;
+        background-color:#fff;
+
+    }
+    
+
+}/* end of smartfigure */

@@ -1,0 +1,175 @@
+/* 
+all these rules belong inside of the smartfigure object. 
+To isolate them from any conflicting rules in the surrounding page
+we wrap everything in the smartfigure class
+*/
+.smartFigure{
+
+    /* Upstream Panel */
+    .panel.inPanelSearchResults {
+
+        display:block;
+        padding-left:80px;
+        padding-right:1em;
+        padding-bottom:6px;
+        background-color:#f0f0f0;
+
+    }
+
+    .panel.slideItemUpstream.inPanelSearchResults {
+        
+        display:block;
+        padding-right:80px;
+        padding-left:1em;
+        padding-bottom:6px;
+        background-color:#f0f0f0;
+    
+    }
+
+
+    .filterItem {
+        font-size:0.882em;
+        font-weight:bold;
+        margin-bottom: 1em;
+    }
+    
+    .filterItem:last-child { margin-bottom:0; }
+    
+    .filterItem select, .filterItem input {
+        display: inline-block;
+        width: 30%;
+        height: 34px;
+        padding: 6px 12px;
+        margin-left:0.5em;
+        margin-right: 0.5em;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+    
+    .filterItem input {
+        padding: 0 12px;
+    }
+    
+    .filterItem button {
+    
+        height:30px;
+        width:30px;
+        padding:0;
+        color: #fff;
+        background-color: $dark_background;
+        border: solid 1px $light_background;
+        font-size:1rem;
+        font-weight:bold;
+        border-radius: 6px;
+    
+    }
+    
+    button.removeFilter {
+        background-color:#fff;
+        color:$dark_background;
+    }
+
+    .filterItem button.addFilterUp,
+    .filterItem button.addFilterDown
+     {
+        border-color: $dark_background;
+    }
+    
+    
+    
+    .panel.inPanelSearchResults footer {
+        background-color:#fff;
+        padding: 1em
+    }
+
+
+    .inPanelSearchResults .resultSet {
+        padding:1em;
+        background-color:#fff;
+        margin-bottom:0;
+    }
+
+    .publication {
+        padding: 1em;
+        border: solid 2px #f0f0f0;
+        border-radius: 6px;
+        margin-bottom:1em;
+    }
+
+    .subsequentItems {
+        padding-left:142px;
+        margin-bottom:0.824em;
+        height:0;
+        opacity:0;
+        overflow:hidden;
+        transition: opacity 0.4s ease-in;
+    }
+
+    .slideItemUpstream .subsequentItems {
+        padding-left: 0;
+        padding-right: 142px;
+    }
+    
+    .subsequentItems.show {
+        height:auto;
+        opacity:1;
+    }
+
+    .publication .details {
+        padding-top:0.824em;
+    }
+
+    .backNavigation {
+        background-color:darken($light_background, 15%);
+        position:absolute;
+        top:0;
+        left:0;
+        bottom:0;
+        width: 60px;
+        cursor:pointer;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+    
+    .slideItemUpstream .backNavigation {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        left:auto;
+        right:0;
+    }
+    
+    .backNavigation:hover {
+        background-color:#b6b6b6;
+    }
+    
+    .backNavigation label {
+        position: absolute;
+        top: 45%;
+        left: -70px;
+        width: 200px;
+        // -ms-transform: rotate(270deg); /* IE 9 */
+        // -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+        transform: rotate(270deg);
+        cursor: pointer;
+    }
+    
+    .slideItemUpstream .backNavigation label {
+        position: absolute;
+        top: 45%;
+        left: -70px;
+        width: 200px;
+        // -ms-transform: rotate(90deg); /* IE 9 */
+        // -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+        transform: rotate(90deg);
+        cursor: pointer;
+    }
+}/* end of smartfigure */

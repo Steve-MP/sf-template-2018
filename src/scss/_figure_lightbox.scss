@@ -1,0 +1,159 @@
+.sflbox {
+    background-color:black;
+    min-height:100vh;
+}
+
+#smartFigureLightBox{
+
+    font-size:17px;
+    padding: 0 2em;
+    margin: 1em auto;
+    font-family: 'Open Sans', sans-serif;
+    // -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $dark_background;
+    background-color: $light_background;
+    width:680px;
+    border-radius:6px;
+    position:relative;
+
+    #LightBoxWindowClose {
+        position:absolute;
+        right:6px;
+        top:2px;
+        font-size:1.4em;
+        color: $perturb_color;
+    }
+
+    header {
+        background-color:$dark_background;
+        color: #fff;
+        padding: 1em 1em;
+        margin-bottom:1em;
+        line-height:1.4;
+    }
+
+    h2, h3 {
+        margin:0 0 7px 0;
+        padding:0;
+        font-size:1em;
+        font-weight:normal;
+    }
+
+    .LightBoxFigureTitle {
+        margin:0 0 3px 0;        
+    }
+
+    .LightBoxAuthors {
+        margin:0 0 7px 0;
+        font-size: 0.882em;
+        color: $dark_highlight;
+        font-weight:normal;
+        font-style:italic;
+    }
+
+    .LightBoxPanelTitle {
+        margin-bottom:0.365em;
+
+    }
+
+    .LightBoxFigure {
+        padding:2em;
+        background-color:#fff;
+        border-radius: 6px;
+        border:solid 1px $dark_highlight;
+        position:relative;
+
+    }
+
+    .LightBoxFigure > img {
+        width:100%;
+        height:auto;
+    }
+
+    footer {
+        background-color: $dark_background;
+        margin-top:1em;
+        text-align:right;
+   
+        p { 
+            padding: 1em;
+            margin:0;
+        }
+
+        img {
+            height:2em; 
+            width:auto;
+        }
+    }
+
+    .currentPanelLink {
+        display:block;
+        position:absolute;
+        border: solid orange 2px;
+        border-radius:6px;
+        transition:border-width 0.1s ease-out;
+        transition:color 0.1s ease-out;
+        text-decoration:none;
+    }
+
+    .currentPanelLink:hover {
+        border-width:4px;
+        background-color:rgba(255,165,0,0.2);
+    }
+    .currentPanelLink:hover:before {
+        content:"Return to current figure";
+        display:block;
+        position:absolute;
+        top:0;
+        right:4px;
+        padding:2px 6px;
+        font-size:0.882em;
+        background-color:orange;
+        color:#fff;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+
+    }
+
+    .otherPanelLink {
+        display:block;
+        position:absolute;
+        border: solid $assay_color 2px;
+        border-radius:6px;
+        transition:border-width 0.1s ease-out;
+        transition:color 0.1s ease-out;
+        text-decoration:none;
+    }
+
+    .otherPanelLink:hover {
+        border-width:4px;
+        background-color:rgba(98,146,208,0.2);
+    }
+    .otherPanelLink:hover:before {
+        content:"Open in SmartFigure";
+        display:block;
+        position:absolute;
+        top:0;
+        right:4px;
+        padding:2px 6px;
+        font-size:0.882em;
+        background-color:$assay_color;
+        color:#fff;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+
+    }
+
+    .LightBoxFigureCaption {
+        font-size:0.882em;
+        margin-top:1.4em;
+        max-height: 8em;
+        overflow-y:scroll;
+        padding:1em;
+        background-color:#fff;
+        border-radius: 6px;
+        border:solid 1px $dark_highlight;
+    }
+
+} /* end of smartfigurelightbox */

@@ -1,0 +1,610 @@
+<!doctype html>
+<html class="no-js" lang="en-gb">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SmartFigure</title>
+        <meta name="description" content="SmartFigures Layout 2017">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet"> 
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>        
+        <div class="banner">
+            <div class="container">
+                <img src="images/sourcedata_logo.png" alt="Logo">
+            </div>
+        </div>
+        <div class="smartFigure"><!-- container for the smart figure -->
+            <header>
+                <h1>Fission and selective fusion govern mitochondrial segregation and elimination by autophagy</h1>
+                <p class="authors">Gilad, Twig et al. The EMBO Journal 2007</p>
+                <p class="link">Reproduced from <a href="#">10.1038/sj.emboj.7601963</a> with permissions</p>
+            </header>
+            <!-- container for the up/downstream slider -->
+            <div class="slideBox">
+                <!-- 
+                    this element "slideInnerContainer" is the part that moves left and right
+                    to show the central slide or the upstream and downstream slides.
+
+                    To show the upstream slide, add the class "showUpstream"
+                    To show the downstream slide, add the class "showDownstream"
+                    To show the central slide, remove both of the above classes.
+                -->
+                <div class="slideInnerContainer">
+
+                    <!-- this section element contains the upstream slide -->
+                    <section class="panel slideItem slideItemUpstream inPanelSearchResults" id="slideItemUpstream">
+                        <div>
+                            <header>
+                                Upstream of 
+  
+                                <button class="element assayed headerButton">
+                                    <i class="sd-icon-2-gene"></i> 
+                                    Glucose</button>
+                                <a href="#">(CHEBI:5931)</a>
+                                
+
+                            </header>
+                            <div class="filters">
+                                <div class="filterItem">
+                                    Filter by:
+                                    <select name="example">
+                                        <option value="Journal" selected>Journal</option>
+                                    </select>
+                                    <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                    <input type="text" placeholder="Journal Name">
+                                    <button class="addFilterUp"><i class="fas fa-plus"></i></button>
+                                    <button class="removeFilter"><i class="fas fa-minus"></i></button>
+
+                                </div>
+                            </div>
+                            <div class="resultSet">
+                                <h3>3 results found</h3>
+                                <!-- each section with the class "publication" is one paper in the up/downstream display-->
+                                <section class="publication">
+                                    <!-- firstItems should contain the first three entities that are upstream/downstream of the target, and the target itself. Subsequent entities should go in the "subsequentItems" box, below -->
+                                    <div class="firstItems">
+                                            <button class="element perturbation"><i class="sd-icon-2-molecule"></i> Gargamel</button>
+                                            <button class="element perturbation"><i class="sd-icon-2-organism"></i> Salmonella</button>
+                                            <button class="element perturbation"><i class="sd-icon-2-subcellular"></i> Epitomandrillase</button>
+                                            <i class="fa fa-caret-right" aria-hidden="true"></i> 
+                                            <button class="element assayed"><i class="sd-icon-2-gene"></i> Glucose</button>                                               
+                                    </div>
+                                    <!-- toggling the class "show" on the divs with the "subsequentItems" class will show or hide the list of entities where there are more than 3 -->
+                                    <div class="subsequentItems" id="subsequent4">
+                                            <button class="element perturbation"><i class="sd-icon-2-gene"></i> BFG666</button>                                            
+                                            <button class="element perturbation"><i class="sd-icon-2-gene"></i> Salmonella</button>                                            
+                                            <button class="element perturbation"><i class="sd-icon-2-gene"></i> SOAP1</button> 
+
+                                            <button class="element perturbation"><i class="sd-icon-2-gene"></i> Alcohol</button> 
+                                    </div>
+                                    <div class="revealButton" >
+                                        <button class="reveal" data-revealitem="subsequent4">Show 4 more relations</button>
+                                    </div>
+                                    <div class="details">
+                                        <h3>Fatty acid-induced NLRP3-ASC inflammasome activation interferes with insulin signaling</h3>
+                                        <span class="authors">
+                                            Haitao H Wen et al.
+                                        </span>
+                                        <a href="#">Nature Immunology - 2011</a>
+                                    </div>
+                                </section>
+                                <section class="publication">
+                                    <div class="firstItems">
+                                            <button class="element perturbation"><i class="sd-icon-2-gene"></i> Forskolin</button>
+                                            <button class="element perturbation"><i class="sd-icon-2-tissue"></i> Lemming</button>
+                                            <button class="element perturbation"><i class="sd-icon-2-cell"></i> Parvovirus regulating enzyme</button>
+                                            <i class="fa fa-caret-right" aria-hidden="true"></i> 
+                                            <button class="element assayed"><i class="sd-icon-2-gene"></i> Glucose</button>                                               
+                                    </div>
+                                    <div class="subsequentItems" id="subsequent5">
+                                            <button class="element perturbation"><i class="sd-icon-2-gene"></i> BFG666</button>                                            
+                                            <button class="element perturbation"><i class="sd-icon-2-protein"></i> Salmonella</button>                                            
+                                            <button class="element perturbation"><i class="sd-icon-2-cell"></i> SOAP1</button> 
+
+                                            <button class="element perturbation"><i class="sd-icon-2-protein"></i> Alcohol</button> 
+                                    </div>
+                                    <div class="revealButton" >
+                                        <button class="reveal" data-revealitem="subsequent5">Show 4 more relations</button>
+                                    </div>
+                                    <div class="details">
+                                        <h3>Fatty acid-induced NLRP3-ASC inflammasome activation interferes with insulin signaling</h3>
+                                        <span class="authors">
+                                            Haitao H Wen et al.
+                                        </span>
+                                        <a href="#">Nature Immunology - 2011</a>
+                                    </div>
+                                </section>
+                                <section class="publication">
+                                    <div class="firstItems">
+                                            <button class="element perturbation"><i class="sd-icon-2-organism"></i> Sausage</button>
+                                            <i class="fa fa-caret-right" aria-hidden="true"></i> 
+                                            <button class="element assayed"><i class="sd-icon-2-gene"></i> Glucose</button>                                               
+                                    </div>
+
+                                    <div class="details">
+                                        <h3>Fatty acid-induced NLRP3-ASC inflammasome activation interferes with insulin signaling</h3>
+                                        <span class="authors">
+                                            Haitao H Wen et al.
+                                        </span>
+                                        <a href="#">Nature Immunology - 2011</a>
+                                    </div>
+                                </section>
+
+         
+                                
+                            </div>
+                            <footer><button id="backButtonUpstream">Figure 4 <i class="fa fa-caret-right" aria-hidden="true"></i></button></footer>
+
+                            <div class="backNavigation">
+                                <label><i class="fa fa-chevron-up" aria-hidden="true"></i> Back to Figure 8 <i class="fa fa-chevron-up" aria-hidden="true"></i></label>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- this section element contains the main figure view -->
+                    <section class="panel slideItem" id="smartFigure">
+                        <div class="figurePanel">
+                            <div>
+                                <header>
+                                    <!-- Figure title here -->
+                                    <h2>Figure 8</h2>
+                                    <!-- event handler to open the full image lightbox here-->
+                                    <a href="fullImage.html">View full figure</a></header>
+                                <div>
+
+                                    <div class="figureTitle">
+                                        <!-- Figure panel title -->
+                                        <h3>Figure 8-C</h3>
+                                        <!--download panel handler -->
+                                        <button onclick="event.preventDefault(); alert('If this were real, you\'d be downloading')" class="figureDownload"><i class="fa fa-download" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    
+                                    <figure>
+                                        <!-- Panel image here -->
+                                        <img src="images/figure8-c.jpg" alt="Figure 8-C">
+                                        <!-- 
+                                            panel caption in here
+                                            classes component, intervention, assayed apply relevant colour scheme
+                                        -->
+                                        <figcaption>
+                                            <p>A, B Body mass (A), <a class="component" href="#">blood</a> <a class="intervention" href="#">glucose</a>, and the cumulative area under the curve (AUC) (B) during <a class="assayed" href="#">insulin</a> tolerance tests (ITT; 1.0 IU/kg i.p.) in <a class="intervention" href="#">NOD2</a>+/+ (n = 8) and <a class="intervention" href="#">NOD2</a>−/− (n = 10) littermate mice fed a HFD for 16 weeks, *P = 0.001.</p>
+
+                                            <p>C <a class="component" href="#">Blood</a> <a class="assayed" href="#">glucose</a> and the cumulative AUC during <a class="assayed" href="#">insulin</a> tolerance tests (ITT; 0.5 IU/kg i.p.) in chow-fed WT (n = 6) and NOD2−/− (n = 6) mice.</p>
+
+                                            <p>D HOMA insulin resistance (IR) index in weight-matched chow- (n = 7) or HFD-fed (n = 10) WT and NOD2−/− mice, #P = 0.0001 (WT chow versus WT HFD) and *P = 0.0001 (WT HFD versus NOD2−/− HFD).</p>
+
+                                        </figcaption>
+                                        <!-- methods in here - span with class "method" -->
+                                        <div class="methods">
+                                            <span class="method">Spectrophotmetry method</span>
+                                            <span class="method">Microscopy</span>
+                                        </div>  
+                                    </figure>
+
+                                </div>
+                            </div>
+                            <footer>
+                                <span>
+
+                                        <span>Panel</span>
+                                        <!-- panel list here -->
+                                        <span class="btn-group">                            
+                                            <button>8-A</button>
+                                            <button>8-B</button>
+                                            <!-- the class "active" should be applied to the active button-->
+                                            <button class="active">8-C</button>
+                                            <button>8-D</button>
+                                            <button>8-E</button>
+                                        </span>
+                
+
+                                </span>
+                                
+                            </footer>
+
+                        </div>
+
+                        <!-- This is the left sidebar of the main panel -->
+                        <div class="interventionNav">
+                            <div>
+                                <div class="tags">
+                                    <aside class="key">
+                                    </aside>
+                                    <h3>Intervention</h3>
+
+                                    <!--
+                                         each span.btn-info-group 
+                                         contains one entity along with
+                                         its upstream and downstream navigation controls
+                                    -->
+                                    <span class="btn-info-group">
+
+                                        <button class="element"><i class="fa fa-chevron-down" aria-hidden="true"></i><i class="sd-icon-2-molecule"></i> Glucose</button>
+                                        <!-- note the class "open" below, this is applied to make the info group visible-->
+                                        <div class="moreInfoBox open">
+                                            <div class="entityInfoButtonContainer">
+                                                <button><i class="fa fa-info-circle" aria-hidden="true"></i> Entity Info</button>
+                                            </div>
+                                            <strong>Explore</strong>
+                                            <div class="exploreUpAndDownstreamContainer">
+                                                <button class="upstream"><i class="sd-icon-1-undefined" aria-hidden="true"></i> </button>
+                                                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                                <i class="sd-icon-1-molecule exploreElementIcon" aria-hidden="true"></i>
+                                                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                                <button class="downstream"><i class="sd-icon-1-undefined" aria-hidden="true"></i></button>                                               
+                                            </div>
+
+                                        </div>
+                                    </span>
+                                    <!-- ^^ end of btn-info-group -->
+
+                                    <span class="btn-info-group">
+                                        <button class="element"><i class="fa fa-chevron-right" aria-hidden="true"></i><i class="sd-icon-2-subcellular"></i> Pangolin</button>
+                                        <div class="moreInfoBox">
+                                            <div class="entityInfoButtonContainer">
+                                                <button><i class="fa fa-info-circle" aria-hidden="true"></i> Entity Info</button>
+                                            </div>
+                                            <strong>Explore</strong>
+                                            <div class="exploreUpAndDownstreamContainer">
+                                                <button class="upstream"><i class="sd-icon-1-undefined" aria-hidden="true"></i> </button>
+                                                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                                <i class="sd-icon-1-subcellular exploreElementIcon" aria-hidden="true"></i>
+                                                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                                <button class="downstream"><i class="sd-icon-1-undefined" aria-hidden="true"></i></button>                                               
+                                            </div>
+
+                                        </div>
+                                    </span>
+                                    <span class="btn-info-group">
+                                        <button class="element"><i class="fa fa-chevron-right" aria-hidden="true"></i><i class="sd-icon-2-organism"></i> Yersina pestis</button>
+                                        <div class="moreInfoBox">
+                                            <div class="entityInfoButtonContainer">
+                                                <button><i class="fa fa-info-circle" aria-hidden="true"></i> Entity Info</button>
+                                            </div>
+                                            <strong>Explore</strong>
+                                            <div class="exploreUpAndDownstreamContainer">
+                                                <button class="upstream"><i class="sd-icon-1-undefined" aria-hidden="true"></i> </button>
+                                                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                                <i class="sd-icon-1-organism exploreElementIcon" aria-hidden="true"></i>
+                                                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                                <button class="downstream"><i class="sd-icon-1-undefined" aria-hidden="true"></i></button>                                               
+                                            </div>
+
+                                        </div>
+                                    </span>
+ 
+                                    
+                                </div>
+                            </div>
+                            <div class="panelNavigation">
+                                    <button><i class="fa fa-chevron-left" aria-hidden="true"></i> Figure 8</button>
+                                </div>
+                        </div>
+
+                        <!-- this is the right sidebar of the main panel -->
+                        <div class="assayNav">
+                            <div class="tags">
+                                <aside class="key"> </aside>
+                                    <h3>Assay</h3>
+                                    <span class="btn-info-group">
+                                        <button class="element"><i class="fa fa-chevron-down" aria-hidden="true"></i><i class="sd-icon-2-tissue"></i> Kidney</button>
+                                        <div class="moreInfoBox open">
+                                            <div class="entityInfoButtonContainer">
+                                                <button><i class="fa fa-info-circle" aria-hidden="true"></i> Entity Info</button>
+                                            </div>
+                                            <strong>Explore</strong>
+                                            <div class="exploreUpAndDownstreamContainer">
+                                                <button class="upstream"><i class="sd-icon-1-undefined" aria-hidden="true"></i> </button>
+                                                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                                <i class="sd-icon-1-tissue exploreElementIcon" aria-hidden="true"></i>
+                                                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                                <button class="downstream"><i class="sd-icon-1-undefined" aria-hidden="true"></i></button>                                               
+                                            </div>
+
+                                        </div>
+                                    </span>
+                                    <span class="btn-info-group">
+                                        <button class="element"><i class="fa fa-chevron-right" aria-hidden="true"></i><i class="sd-icon-2-molecule"></i> Glucose</button>
+                                        <div class="moreInfoBox">
+                                            <div class="entityInfoButtonContainer">
+                                                <button><i class="fa fa-info-circle" aria-hidden="true"></i> Entity Info</button>
+                                            </div>
+                                            <strong>Explore</strong>
+                                            <div class="exploreUpAndDownstreamContainer">
+                                                <button class="upstream"><i class="sd-icon-1-undefined" aria-hidden="true"></i> </button>
+                                                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                                <i class="sd-icon-1-molecule exploreElementIcon" aria-hidden="true"></i>
+                                                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                                <button class="downstream"><i class="sd-icon-1-undefined" aria-hidden="true"></i></button>                                               
+                                            </div>
+
+                                        </div>
+                                    </span>
+                                    <span class="btn-info-group">
+                                        <button class="element"><i class="fa fa-chevron-right" aria-hidden="true"></i><i class="sd-icon-2-molecule"></i> Glucose</button>
+                                        <div class="moreInfoBox">
+                                            <div class="entityInfoButtonContainer">
+                                                <button><i class="fa fa-info-circle" aria-hidden="true"></i> Entity Info</button>
+                                            </div>
+                                            <strong>Explore</strong>
+                                            <div class="exploreUpAndDownstreamContainer">
+                                                <button class="upstream"><i class="sd-icon-1-undefined" aria-hidden="true"></i> </button>
+                                                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                                <i class="sd-icon-1-molecule exploreElementIcon" aria-hidden="true"></i>
+                                                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                                <button class="downstream"><i class="sd-icon-1-undefined" aria-hidden="true"></i></button>                                               
+                                            </div>
+
+                                        </div>
+                                    </span>
+
+                                        
+                                </div>
+                                <div class="panelNavigation">
+                                    <button> Figure 7 <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                                </div>
+                        </div>
+                    </section>
+
+                    <!-- this section element contains the downstream slide -->
+                    <section class="panel slideItem slideItemDownstream inPanelSearchResults" id="slideItemDownstream">
+                        <div>
+                            <header>
+                                Downstream of 
+
+                                <!-- button displaying searched entity -->
+                                <button class="element perturbation headerButton"><i class="sd-icon-2-gene"></i> Glucose</button>
+                                <a href="#">(CHEBI:5931)</a>
+                                
+
+                            </header>
+
+                            <!-- filters here -->
+                            <div class="filters">
+                                <div class="filterItem">
+                                    Filter by:
+                                    <select name="example">
+                                        <option value="Journal" selected>Journal</option>
+                                    </select>
+                                    <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                    <input type="text" placeholder="Journal Name">
+                                    <button class="addFilterDown"><i class="fas fa-plus"></i></button>
+                                    <button class="removeFilter"><i class="fas fa-minus"></i></button>
+
+                                </div>
+                            </div>
+                            <div class="resultSet">
+                                <!-- number of results here -->
+                                <h3>3 results found</h3>
+
+                                <!-- each section.publication is one paper -->
+                                    <section class="publication">
+                                        <div class="firstItems">
+                                                <button class="element perturbation"><i class="sd-icon-2-protein"></i> Glucose</button>
+                                                <i class="fa fa-caret-right" aria-hidden="true"></i> 
+                                                <button class="element assayed"><i class="sd-icon-2-gene"></i> Insulin</button>                                            
+                                          
+                                        </div>
+                                        <div class="details">
+                                            <!-- paper title here-->
+                                            <h3>Fatty acid-induced NLRP3-ASC inflammasome activation interferes with insulin signaling</h3>
+                                            <!--author list here-->
+                                            <span class="authors">
+                                                Haitao H Wen et al.
+                                            </span>
+                                            <!-- link to journal here -->
+                                            <a href="#">Nature Immunology - 2011</a>
+                                        </div>
+                                    </section>
+                                    <!-- ^^end of publication -->
+
+                                    <section class="publication">
+                                        <!-- div.firstItems contains the first three entities up/downstream of the target -->
+                                            <div class="firstItems">
+                                                    <button class="element perturbation"><i class="sd-icon-2-gene"></i> Glucose</button>
+                                                    <i class="fa fa-caret-right" aria-hidden="true"></i> 
+                                                    <button class="element assayed"><i class="sd-icon-2-gene"></i> Insulin</button>                                            
+                                                    <button class="element assayed"><i class="sd-icon-2-gene"></i> High Fructose Corn Syrup</button>                                            
+                                                    <button class="element assayed"><i class="sd-icon-2-gene"></i> CHB12</button>                                            
+                                            </div>
+                                            <!-- div.subsequentItems contains all the other entities up/downstream of the target
+                                                note: toggle the class "show" on div.subsequentItems to show/hide the items-->
+                                            <div class="subsequentItems" id="subsequent2">
+                                                    <button class="element assayed"><i class="sd-icon-2-gene"></i> BFG666</button>                                            
+                                                    <button class="element assayed"><i class="sd-icon-2-gene"></i> Salmonella</button>                                            
+                                                    <button class="element assayed"><i class="sd-icon-2-gene"></i> SOAP1</button> 
+        
+                                                    <button class="element assayed"><i class="sd-icon-2-gene"></i> Alcohol</button> 
+                                                    <button class="element assayed"><i class="sd-icon-2-gene"></i> Salmonella</button>                                            
+                                                    <button class="element assayed"><i class="sd-icon-2-gene"></i> SOAP1</button> 
+        
+                                                    <button class="element assayed"><i class="sd-icon-2-gene"></i> Alcohol</button>                                                    
+                                            </div>
+                                            <div class="revealButton" >
+                                                <!-- add handler to reveal other entities -->
+                                                <button class="reveal" data-revealitem="subsequent2">Show 7 more relations</button>
+                                            </div>
+                                            <div class="details">
+                                                <h3>Fatty acid-induced NLRP3-ASC inflammasome activation interferes with insulin signaling</h3>
+                                                <span class="authors">
+                                                    Haitao H Wen et al.
+                                                </span>
+                                                <a href="#">Nature Immunology - 2011</a>
+                                            </div>
+                                        </section>
+            
+                                
+                            </div>
+                            <footer><button id="backButtonDownstream"><i class="fa fa-caret-left" aria-hidden="true"></i> Figure 4</button></footer>
+
+                            <div class="backNavigation">
+                                <label><i class="fa fa-chevron-up" aria-hidden="true"></i> Back to Figure 8 <i class="fa fa-chevron-up" aria-hidden="true"></i></label>
+
+                            </div>
+                        </div>
+                        
+                    </section>
+                </div>
+            </div><!-- end of slideBox -->
+
+
+
+            <div class="relatedData">
+                    <header>
+                        <div class="headerContainer">
+                            <div class="openClose"><button class="openCloseButton"><i class="fa fa-minus"></i></button><h3>Related data</h3></div>
+                            <div class="search"><span class="searchCaption">Search </span>   
+                                <span class="btn-group">
+                                    <!-- figure count in this paper here -->
+                                    <button>This paper <span class="thisPaperFigureCount">(2)</span></button>
+                                    <!-- the class "active" should be applied to the active button-->
+                                    <button class="active">Globally</button>
+                                </span> 
+                            </div>
+                        </div>
+                    </header>
+                    <section class="relatedDataCarouselOuterContainer">
+                        <!-- a.navigateLeft should implement offsetting the carousel view to the left -->
+                        <a href="#" class="navigateLeft"><i class="fa fa-chevron-left"></i></a>
+                        <div class="relatedDataCarouselInnerContainer">
+                            <ul>
+                                <!-- each li.relatedDataCarouselItem is one panel within the carousel -->
+                                <li class="relatedDataCarouselItem">
+                                        <!-- stars are represented as i.fa.fa-star elements-->
+                                        <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                                        <!--related figure image here -->
+                                        <div class="figure"><img src="images/related_image1.jpeg" alt="Clemensen et al, 2015, Figure 1E"></div>
+                                        <div class="tags">
+                                            <!-- perturbed entity tags in here as span.carouselImageTag -->
+                                            <div class="tags_perturbed"><span class="carouselItemtag">Glucose</span><span class="carouselItemtag">Cortaptin</span></div>
+                                            <div class="tags_assayed"><span class="carouselItemtag">Mandolin</span><span class="carouselItemtag">Wheelybin</span></div>
+
+                                        </div>
+                                        <!-- related paper title here -->
+                                        <p class="relatedDataTitle">
+                                                Dual melanocortin-4 receptor and GLP-1 receptor agonism amplifies metabolic benefits in diet-induced obese mice.
+                                        </p>
+                                        <!-- related paper reference here -->
+                                        <p class="relatedDataReference">
+                                                Clemmensen C et al. EMBO molecular medicine (2015)
+                                        </p>
+                                </li>
+                                <!-- end of carousel item -->
+
+                                <li class="relatedDataCarouselItem">
+                                        <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                                        <div class="figure"><img src="images/related_image2.jpeg" alt="Clemensen et al, 2015, Figure 1E"></div>
+                                        <div class="tags">
+                                            <div class="tags_perturbed"><span class="carouselItemtag">Glucose</span><span class="carouselItemtag">Corticopolo</span></div>
+                                            <div class="tags_assayed"><span class="carouselItemtag">Semolina</span><span class="carouselItemtag">Vaseline</span></div>
+                                        </div>
+                                        <p class="relatedDataTitle">
+                                                Dual melanocortin-4 receptor and GLP-1 receptor agonism amplifies metabolic benefits in diet-induced obese mice.
+                                        </p>
+                                        <p class="relatedDataReference">
+                                                Clemmensen C et al. EMBO molecular medicine (2015)
+                                        </p>
+                                </li>
+                                <li class="relatedDataCarouselItem">
+                                        <div class="stars"><i class="fa fa-star"></i></div>
+                                        <div class="figure"><img src="images/related_image3.jpeg" alt="Clemensen et al, 2015, Figure 1E"></div>
+                                        <div class="tags">
+                                            <div class="tags_perturbed"><span class="carouselItemtag">Glucose</span><span class="carouselItemtag">Corticopolo</span></div>
+                                            <div class="tags_assayed"><span class="carouselItemtag">Semolina</span><span class="carouselItemtag">Vaseline</span><span class="carouselItemtag">Portacabin</span><span class="carouselItemtag">Acetylcholinesterase</span></div>
+                                        </div>
+                                        <p class="relatedDataTitle">Dual melanocortin-4 receptor and GLP-1 receptor agonism amplifies metabolic benefits in diet-induced obese mice.</p>
+                                        <p class="relatedDataReference">
+                                                Clemmensen C et al. EMBO molecular medicine (2015)
+                                        </p>
+                                </li>
+                                <li class="relatedDataCarouselItem">
+                                        <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                                        <div class="figure"><img src="images/related_image4.jpeg" alt="Clemensen et al, 2015, Figure 1E"></div>
+                                        <div class="tags">
+                                            <div class="tags_perturbed"><span class="carouselItemtag">Glucose</span><span class="carouselItemtag">Corticopolo</span></div>
+                                            <div class="tags_assayed"><span class="carouselItemtag">Semolina</span><span class="carouselItemtag">Vaseline</span></div>
+                                        </div>
+                                        <p class="relatedDataTitle">
+                                                Dual melanocortin-4 receptor and GLP-1 receptor agonism amplifies metabolic benefits in diet-induced obese mice.
+                                        </p>
+                                        <p class="relatedDataReference">
+                                                Clemmensen C et al. EMBO molecular medicine (2015)
+                                        </p>
+                                </li>
+                                <li class="relatedDataCarouselItem">
+                                        <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                                        <div class="figure"><img src="images/related_image2.jpeg" alt="Clemensen et al, 2015, Figure 1E"></div>
+                                        <div class="tags">
+                                            <div class="tags_perturbed"><span class="carouselItemtag">Glucose</span><span class="carouselItemtag">Corticopolo</span></div>
+                                            <div class="tags_assayed"><span class="carouselItemtag">Semolina</span><span class="carouselItemtag">Vaseline</span></div>
+                                        </div>
+                                        <span class="relatedDataTitle">
+                                                Dual melanocortin-4 receptor and GLP-1 receptor agonism amplifies metabolic benefits in diet-induced obese mice.
+                                        </span>
+                                        <span class="relatedDataReference">
+                                                Clemmensen C et al. EMBO molecular medicine (2015)
+                                        </span>
+                                </li>
+                                <li class="relatedDataCarouselItem">
+                                    <div class="stars"><i class="fa fa-star"></i></div>
+                                    <div class="figure"><img src="images/related_image2.jpeg" alt="Clemensen et al, 2015, Figure 1E"></div>
+                                    <div class="tags">
+                                        <div class="tags_perturbed"><span class="carouselItemtag">Glucose</span><span class="carouselItemtag">Corticopolo</span></div>
+                                        <div class="tags_assayed"><span class="carouselItemtag">Semolina</span><span class="carouselItemtag">Vaseline</span><span class="carouselItemtag">Portacabin</span><span class="carouselItemtag">Acetylcholinesterase</span></div>
+                                    </div>
+                                    <p class="relatedDataTitle">Dual melanocortin-4 receptor and GLP-1 receptor agonism amplifies metabolic benefits in diet-induced obese mice.</p>
+                                    <p class="relatedDataReference">
+                                            Clemmensen C et al. EMBO molecular medicine (2015)
+                                    </p>
+                            </li>
+                            <li class="relatedDataCarouselItem">
+                                    <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                                    <div class="figure"><img src="images/related_image3.jpeg" alt="Clemensen et al, 2015, Figure 1E"></div>
+                                    <div class="tags">
+                                        <div class="tags_perturbed"><span class="carouselItemtag">Glucose</span><span class="carouselItemtag">Corticopolo</span></div>
+                                        <div class="tags_assayed"><span class="carouselItemtag">Semolina</span><span class="carouselItemtag">Vaseline</span></div>
+                                    </div>
+                                    <p class="relatedDataTitle">
+                                            Dual melanocortin-4 receptor and GLP-1 receptor agonism amplifies metabolic benefits in diet-induced obese mice.
+                                    </p>
+                                    <p class="relatedDataReference">
+                                            Clemmensen C et al. EMBO molecular medicine (2015)
+                                    </p>
+                            </li>
+                            <li class="relatedDataCarouselItem">
+                                    <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                                    <div class="figure"><img src="images/related_image4.jpeg" alt="Clemensen et al, 2015, Figure 1E"></div>
+                                    <div class="tags">
+                                        <div class="tags_perturbed"><span class="carouselItemtag">Glucose</span><span class="carouselItemtag">Corticopolo</span></div>
+                                        <div class="tags_assayed"><span class="carouselItemtag">Semolina</span><span class="carouselItemtag">Vaseline</span></div>
+                                    </div>
+                                    <span class="relatedDataTitle">
+                                            Dual melanocortin-4 receptor and GLP-1 receptor agonism amplifies metabolic benefits in diet-induced obese mice.
+                                    </span>
+                                    <span class="relatedDataReference">
+                                            Clemmensen C et al. EMBO molecular medicine (2015)
+                                    </span>
+                            </li>
+                            </ul>
+                        </div>
+                        <!-- implement handler to offset carousel viewport right on this element -->
+                        <a href="#" class="navigateRight"><i class="fa fa-chevron-right"></i></a>
+                    </section>
+                    <section class="furtherInfoPanelList"></section>
+                    <footer>Click on figure to view in SmartFigure</footer>
+                </div>     
+
+
+                <!-- 
+                    these scripts contain the event handlers for the demo. They should be replaced by native implementations in Angular where possible. 
+                -->
+            <script src="scripts/main.js"></script>
+        </div>
+
+
+    </body>
+</html>

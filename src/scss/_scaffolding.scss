@@ -1,0 +1,249 @@
+/* 
+all these rules belong inside of the smartfigure object. 
+To isolate them from any conflicting rules in the surrounding page
+we wrap everything in the smartfigure class
+*/
+
+.smartFigure{
+    
+    width:730px;
+    margin:0 auto;
+    background-color: #fff !important;
+    
+    header {
+        padding-bottom:1em;
+    }
+
+    .slideBox {
+        width:100%;
+        position:relative;
+        overflow-x:hidden;
+        margin-bottom:1em;
+    }
+
+    .panel {
+        box-sizing:border-box;
+        padding:0;
+        border: solid 1px transparent;
+        border-radius:6px;
+        background-color:$light_background;
+        display:flex;
+    }
+
+    .slideInnerContainer {
+        background-color: transparent;
+        width:300%;
+        position:relative;
+        left:-100%;
+        transition:left 0.3s ease-out;
+    }
+
+    .slideInnerContainer.showUpstream {
+          left:0;
+    }
+
+    .slideInnerContainer.showDownstream {
+          left:-200%;
+    }
+
+    .panel.slideItem {
+        width:33.3333333%;
+        float:left;
+    }
+
+    .panel.slideItemUpstream {
+        position:relative;
+        width:33.3333333%;
+    }
+
+    .panel.slideItemDownstream {
+        position:relative;
+        width:33.3333333%;
+    }
+    
+    .slideItemUpstream,
+    .slideItemDownstream {
+        max-height:800px;
+        overflow:hidden;
+    }
+
+    .showUpstream .slideItemUpstream {
+        max-height:none;
+    }
+
+    .showDownstream .slideItemDownstream {
+        max-height:none;
+    }
+
+    .upstream, .downstream {
+        background-color:#fff;
+        
+    }
+
+    .downstream:hover i {
+        color:$assay_color;
+    }
+
+    .upstream:hover i {
+        color: $perturb_color;
+    }
+    
+    .interventionNav .exploreElementIcon {
+        color: $perturb-color;
+    }
+    
+    .assayNav .exploreElementIcon {
+        color: $assay-color;
+    }
+
+    .moreInfoBox {
+        box-sizing:border-box;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        overflow:hidden;
+        background-color:#fff;
+        padding:0 4px;
+        height:0;
+        opacity:0;
+        transition: all 0.2s ease-out;
+    }
+
+    .moreInfoBox.open {
+        height:104px;
+        opacity:1;
+        padding:6px 4px;
+    }
+
+    .figurePanel {
+        flex:1;
+        order: 2;
+        flex-grow:1;
+        background-color:#fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .interventionNav {
+        order:1;
+        text-align:center;
+        width:140px;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        flex-basis:140px;
+        flex-grow:0;
+        flex-shrink:0;
+    }
+    
+    .assayNav {
+        order: 3;
+        text-align:center;
+        width:140px;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        flex-basis:140px;
+        flex-grow:0;
+        flex-shrink:0;
+    }
+
+    .figurePanel header, .figurePanel footer {
+        background-color:$dark_background;
+        color:#fff;
+        padding:15px;
+    }
+    
+    .figurePanel header {
+        display:flex;
+        justify-content:space-between;
+    }
+
+
+    .figurePanel > div > div {
+        padding:15px;
+    }
+
+    .figureTitle {
+        display:flex;
+        justify-content:space-between;
+        border-bottom: solid 2px $dark_highlight;
+        padding-bottom:0.4em;
+    }
+    .key {
+        padding:4px;
+        text-align:left;
+        font-size:0.824em;
+        height:62px;
+    }
+
+    .key i {
+        display: inline-block;
+        position:relative;
+        top:-2px;
+        background-color:#fff;
+        border: solid 1px $light_background;
+        border-radius:6px;
+        width:1em;
+        height:1em;
+        vertical-align: middle;
+        color:$dark_background;
+        text-align:center;
+        margin-right:4px;
+    }
+
+    .key i:before {
+        position:relative;
+        top:2px;
+    }
+
+    .key p {
+        margin:4px;
+    }
+
+    footer {
+        vertical-align: middle;
+        text-align:center;
+    }
+  
+    footer span > span:first-child {
+        display:inline-block;
+        vertical-align: middle;
+        position:relative;
+        line-height:35px;
+    }
+
+
+
+    figure {
+        margin:1em;
+        padding:0;
+        text-align:center;
+    }
+  
+    figure img{
+      margin:0 0 1rem 0;
+      padding:0;
+      max-width:100%;
+    }
+
+    .methods {
+        text-align:left;
+    }
+    .method {
+        display:inline-block;
+        margin-right:2px;
+        background-color: $assay_method_color;
+        color:$dark_background;
+        font-size:0.7059em;
+        padding:2px 6px;
+        border-radius:4px;
+    }
+
+
+    section.panel.inPanelSearchResults .filters {
+        padding: 1em;
+    }
+
+
+}/* end of smartfigure */

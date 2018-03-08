@@ -1,0 +1,23 @@
+/* Get the Fontawesome 5 icon fonts */
+@import 'fontawesome5_scss/fontawesome';
+@import 'fontawesome5_scss/fa-solid';
+
+/* Get our project's colors - you can change these to get
+    different colored buttons */
+@import 'colours';
+
+/* Get the SourceData Icon Fonts*/
+@import 'SourceData_icons/sd-style-1';
+@import 'SourceData_icons/sd-style-2';
+@import 'SourceData_icons/sd-style-3';
+
+/*SmartFigure Components*/
+@import 'demo_only';
+@import 'scaffolding';
+@import 'typography';
+@import 'buttons';
+@import 'up_and_downstream_panels';
+@import 'related_data';
+
+/* Full Figure*/
+@import 'figure_lightbox';

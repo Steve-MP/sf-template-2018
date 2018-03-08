@@ -1,0 +1,29 @@
+{
+  "name": "sf-template-2018",
+  "version": "0.3.0",
+  "description": "Layout template for SmartFigure revised design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "gulp sass && gulp webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:Steve-MP/sf-template-2018.git"
+  },
+  "author": "Steve Pewter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Steve-MP/sf-template-2018/issues"
+  },
+  "homepage": "https://github.com/Steve-MP/sf-template-2018#README",
+  "devDependencies": {
+    "browser-sync": "^2.23.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.3",
+    "gulp-uglifyjs": "^0.6.2",
+    "webpack-stream": "^4.0.0"
+  }
+}
